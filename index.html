@@ -1,0 +1,424 @@
+html：<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Shadow Effect</title>
+    <style>
+        .center-image {
+            transition: box-shadow 0.3s ease;
+            /* 平滑的过渡效果 */
+        }
+
+        /* 鼠标悬停时的阴影效果 */
+        .center-image:hover {
+            filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.5));
+            /* 阴影大小和透明度 */
+        }
+
+
+        canvas {
+            border: 1px solid black;
+            cursor: crosshair;
+        }
+
+    </style>
+    <title>长图片背景页面</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="fixed-scroll-container">
+        <div class="image-wrapper">
+            <img src="scroll.png" alt="scroll" class="scroll-image">
+
+        </div>
+    </div>
+
+
+    <!-- 第一页 -->
+    <div class="page">
+        <div class="content">
+            <img src="center-image.png" alt="中间的图片" class="center-image">
+
+
+            <div class="top-left-text">We aim to heal people in a more musical way.</div>
+            <!-- 左上角图片 -->
+            <img src="top-left-image1.png" class="top-left-image1" alt="Top Left Image">
+            <!-- 右侧边栏 -->
+            <div class="right-sidebar">
+                <img src="right-image1.png" alt="右侧的图片">
+
+
+            </div>
+
+            <div class="bottom-bar">
+                <div class="bottom-text-container">
+                    <p class="bottom-text">01.Intro</p>
+                    <img src="y1.png" alt="y1.png" class="bottom-text-image">
+                </div>
+
+                <!-- 添加竖线 -->
+                <div class="divider"></div>
+
+                <div class="bottom-text-container">
+                    <p class="bottom-text">02.Spirals</p>
+                    <img src="y2.png" alt="y2.png" class="bottom-text-image">
+                </div>
+
+                <!-- 添加竖线 -->
+                <div class="divider"></div>
+
+                <div class="bottom-text-container">
+                    <p class="bottom-text">03.Play</p>
+                    <img src="y3.png" alt="y3.png" class="bottom-text-image">
+                </div>
+
+                <!-- 添加竖线 -->
+                <div class="divider"></div>
+
+                <div class="bottom-text-container">
+                    <p class="bottom-text">04.World</p>
+                    <img src="y4.png" alt="y4.png" class="bottom-text-image">
+                </div>
+            </div>
+        </div>
+
+        <!-- 第二页 -->
+        <div class="page-2">
+            <div class="content-2">
+                <!-- 左上角图片 -->
+                <img src="top-left-image1.png" class="top-left-image1" alt="Top Left Image">
+                <div class="container1">
+                    <img id="image1" class="toggle-image" src="shangxin.png" alt="First Image">
+                    <img id="image2" class="toggle-image" src="kaixin.png" alt="Second Image" style="display: none;">
+
+                    <img id="image3" class="toggle-image" src="shangxin.png" alt="First Image">
+                    <img id="image4" class="toggle-image" src="kaixin.png" alt="Second Image" style="display: none;">
+
+                    <img id="image5" class="toggle-image" src="shangxin.png" alt="First Image">
+                    <img id="image6" class="toggle-image" src="kaixin.png" alt="Second Image" style="display: none;">
+
+
+                    <!-- 初始显示的其他图片 -->
+                    <img src="tt1.png" id="tt1" class="image tt1">
+                    <img src="tt2.png" id="tt2" class="image tt2">
+                    <img src="tt3.png" id="tt3" class="image tt3">
+
+                    <!-- 初始隐藏的图片 -->
+                    <img src="t1.png" id="t1" class="image t1 hidden">
+                    <img src="t2.png" id="t2" class="image t2 hidden">
+                    <img src="t3.png" id="t3" class="image t3 hidden">
+                </div>
+
+               
+
+                <img src="riji.png" alt="riji" class="riji">
+            </div>
+        </div>
+
+        <div class="page-3">
+            <div class="content-3">
+                <img src="s1.png" alt="s1" class="s1">
+                <img src="s2.png" alt="s2" class="s2">
+                <img src="s3.png" alt="s3" class="s3">
+                <img src="s4.png" alt="s4" class="s4">
+                <img src="s5.png" alt="s5" class="s5">
+
+                <img src="Line 55.png" alt="line" class="line">
+                <img src="Line 55.png" alt="line2" class="line2">
+                <img src="Line 55.png" alt="line3" class="line3">
+                <img src="Line 55.png" alt="line4" class="line4">
+                <img src="Line 55.png" alt="line5" class="line5">
+
+                <img src="vinyl.png" alt="vinyl" class="vinyl">
+                <div class="page-3text1">ILLENIUM</div>
+                <div class="page-3text2">Dabin</div>
+                <div class="page-3text3">Porter Robinson</div>
+                <div class="page-3text4">Madeon</div>
+                <div class="page-3text5">Marshmello</div>
+            </div>
+        </div>
+
+        <div class="page-4">
+
+            <!-- <div class="container">
+                <section id="animateSection" class="animate-section">
+                    <img src="ex1.png" class="animated-img" style="left: 0;" alt="Description of image 1">
+                        <img src="ex2.png" class="animated-img" style="left: -300px;"alt="Description of image 1">
+                            <img src="ex3.png" class="animated-img" style="left: -600px;"alt="Description of image 1">
+                                <img src="ex4.png" class="animated-img" style="left: -900px;"alt="Description of image 1">
+                                    < Add more images as needed -->
+                <!-- </section>
+            </div> --> 
+
+            <div class="container">
+                <section id="scrollingSection" class="scrolling-section">
+                  <div class="scrolling-wrapper">
+                    <img src="ex1.png" class="scrolling-img img1" alt="Description of image 1">
+                    <img src="ex2.png" class="scrolling-img img2" alt="Description of image 2">
+                    <img src="ex3.png" class="scrolling-img img3" alt="Description of image 3">
+                    <img src="ex4.png" class="scrolling-img img4" alt="Description of image 4">
+                    <!-- Add more images if needed -->
+                  </div>
+                </section>
+              </div>
+
+            <!-- <img src="ex1.png" alt="ex1" class="ex1">
+        <img src="ex2.png" alt="ex2" class="ex2">
+        <img src="ex3.png" alt="ex3" class="ex3">
+        <img src="ex4.png" alt="ex4" class="ex4"> 
+        <style>
+            .ex1 {
+                transition: box-shadow 0.3s ease; /* 平滑的过渡效果 */
+            }
+        
+            /* 鼠标悬停时的阴影效果 */
+            .ex1:hover {
+                filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.5)); /* 阴影大小和透明度 */
+            }
+
+            .ex2 {
+                transition: box-shadow 0.3s ease; /* 平滑的过渡效果 */
+            }
+        
+            /* 鼠标悬停时的阴影效果 */
+            .ex2:hover {
+                filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.5)); /* 阴影大小和透明度 */
+            }
+
+            .ex3 {
+                transition: box-shadow 0.3s ease; /* 平滑的过渡效果 */
+            }
+        
+            /* 鼠标悬停时的阴影效果 */
+            .ex3:hover {
+                filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.5)); /* 阴影大小和透明度 */
+            }
+
+            .ex4 {
+                transition: box-shadow 0.3s ease; /* 平滑的过渡效果 */
+            }
+        
+            /* 鼠标悬停时的阴影效果 */
+            .ex4:hover {
+                filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.5)); /* 阴影大小和透明度 */
+            }
+        </style> -->
+
+        </div>
+
+        <div class="page-5">
+            <div class="content-5">
+                <!-- 在工具栏中加入一个画笔工具图标 -->
+                <!-- <button id="brush-tool">🖌️</button>
+                <canvas id="drawing-area" width="800" height="600" ;"></canvas>
+                <img src="xin.png" alt="xin" class="xin"> -->
+
+                <!-- 隐藏的文件输入框 -->
+                <input type="file" id="file-upload" style="display: none;" accept="image/*">
+
+                <!-- 在需要的地方添加图片 -->
+                <!-- <img src="shangchuan.png" alt="Click to Upload" class="clickable-image">  -->
+                <img src="huabanbj5.png" alt="hua" class="hua">
+                <img src="Collage.png" alt="col" class="col">
+                <!-- <img src="Our Gallery.png" alt="our" class="our"> -->
+                <img src="按钮1.png" alt="aaa1" class="aaa1">
+                <img src="按钮11.png" alt="aaa1" class="aaa11">
+                <img src="按钮2.png" alt="aaa1" class="aaa2">
+
+
+
+
+                <button id="saveBtn">保存并上传</button>
+
+                <h1>Draw Apps</h1>
+                <div class="canvasContainer">
+            
+                    
+                    <div class="toolbox">
+                        <button class="down">-</button>
+                        <span class="number">10</span>
+                        <button class="up">+</button>
+            
+                        <div class="color-input">
+                            <input type="color" name="color" id="line-color">
+                        </div>
+            
+                        <div class="tool">
+                            <button id="pen" class="active">
+                                <i class="fas fa-pen"></i>Pen
+                            </button>
+                            <button id="eraser"><i class="fas fa-eraser">era</i></button>
+                            <div class="color-input">
+                                <input type="color" value="#f0f8ff" name="background-color" id="background-color"
+                                    title="Background Color">
+                            </div> 
+                        </div>
+                    </div>
+                    <canvas id="canvas" class="drawingCanvas">
+                    </canvas>
+                    <div class="galleryBackground">
+                        <div id="gallery"></div>
+                    </div>
+                    
+                </div>
+                     
+                <h2>画廊</h2>
+                
+                <!-- <div id="image-display"></div> -->
+            
+
+
+
+
+            </div>
+        </div>
+
+        <div class="page-6">
+            <div class="content-6">
+                <!-- <img src="huahua.png" alt="huahua" class="huahua"> -->
+
+            <!-- 新添加的上传和播放歌曲部分 -->
+        <div class="audio-uploader">
+            <h2>上传并播放歌曲</h2>
+            <input type="file" id="audioUpload" accept="audio/*" multiple>
+            <audio id="audioPlayer" controls></audio>
+        </div>
+
+        <!-- 新添加的MIDI键盘部分 -->
+        <div class="midi-keyboard">
+            <h2>MIDI键盘</h2>
+            <div class="keyboard" id="keyboard">
+                <!-- 键盘按钮将在这里生成 -->
+            </div>
+        </div>
+
+        <!-- 新添加的歌单部分 -->
+        <div class="playlist-container">
+            <h2>歌单</h2>
+            <ul id="playlist" class="playlist">
+                <!-- 歌曲列表项将动态生成 -->
+            </ul>
+        </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="dj-controller">
+            <!-- 左右轨道容器 -->
+            <div class="tracks-container">
+                <!-- 左侧轨道 -->
+                <div class="track">
+                    <div class="screen" id="screen-left"></div>
+                    <input type="file" id="fileInputLeft" multiple>
+                    <ul id="song-list-left"></ul>
+                    <div class="knobs">
+                        <input type="range" id="volume-left" min="0" max="100" value="50">
+                        <input type="range" id="speed-left" min="50" max="150" value="100">
+                    </div>
+                    <audio id="audio-left" controls></audio>
+                </div>
+    
+                <!-- 右侧轨道 -->
+                <div class="track">
+                    <div class="screen" id="screen-right"></div>
+                    <input type="file" id="fileInputRight" multiple>
+                    <ul id="song-list-right"></ul>
+                    <div class="knobs">
+                        <input type="range" id="volume-right" min="0" max="100" value="50">
+                        <input type="range" id="speed-right" min="50" max="150" value="100">
+                    </div>
+                    <audio id="audio-right" controls></audio>
+                </div>
+            </div>
+    
+            <!-- 调音旋钮 -->
+            <div class="knobs">
+                <div class="knob" id="volume">Volume</div>
+                <div class="knob" id="bass">Bass</div>
+                <div class="knob" id="treble">Treble</div>
+            </div>
+    
+            <!-- 键盘（音阶功能） -->
+            <div class="keyboard">
+                <button class="key" data-note="C"></button>
+                <button class="key" data-note="D"></button>
+                <button class="key" data-note="E"></button>
+                <button class="key" data-note="F"></button>
+                <button class="key" data-note="G"></button>
+                <button class="key" data-note="A"></button>
+                <button class="key" data-note="B"></button>
+            </div>
+    
+            <!-- 播放/暂停/切换轨道按钮 -->
+            <div class="controls">
+                <button id="switchTrack">切换轨道</button>
+                <button id="prev">Prev</button>
+                <button id="play">Play</button>
+                <button id="pause">Pause</button>
+                <button id="next">Next</button>
+            </div>
+        </div>
+
+
+
+        
+
+   <!-- 第7页 -->
+   <div class="page7">
+    <div class="content-7">
+
+        <img src="世界图1.png" alt="世界图" class="worldimage">
+
+        <!-- 3D模型上传功能 -->
+<!-- <input type="file" id="model-upload" accept=".gltf,.glb,.obj"> -->
+<button id="upload-button">上传3D模型</button>
+
+<!-- 3D显示容器 -->
+<input type="file" id="file-input" accept=".glb">
+
+<div id="3d-container" style="width:100%; background-color: transparent;"></div>
+
+
+
+    </script>
+
+
+
+</div>
+</div>
+
+<!-- 引入.js和其他脚本 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.39/Tone.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.124.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.124.0/examples/js/loaders/GLTFLoader.js"></script>
+
+
+
+
+    <!-- Firebase SDK (使用 v8.x.x) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <!-- <script src="path/to/Tone.min.js"></script> -->
+
+    <script src="script.js"></script>
+        
+
+</body>
+
+</html>
